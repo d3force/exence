@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Engine Inside</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Engine Inside</div>
+    <div class="controls">
+      <select id="languageToggle">
+        <option value="en">EN</option>
+        <option value="ru">RU</option>
+      </select>
+      <button id="themeToggle">🌙</button>
+    </div>
+    <nav>
+      <button>Главная</button>
+      <button>Анимация</button>
+      <button>Механизм</button>
+      <button>Термины</button>
+    </nav>
+  </header>
+  <main>
+    <section id="engineArea">
+      <!-- SVG-анимация будет вставлена сюда -->
+      <div id="svgContainer">[ SVG ЗДЕСЬ ]</div>
+      <div id="controlsPanel">
+        <button id="startPauseBtn">Старт / Пауза</button>
+        <button>Впуск</button>
+        <button>Сжатие</button>
+        <button>Воспламенение</button>
+        <button>Выпуск</button>
+        <button id="autoCycleBtn">Автоцикл</button>
+        <label><input type="checkbox" id="labelToggle" checked /> Подписи</label>
+      </div>
+    </section>
+    <aside id="detailPanel" class="hidden">
+      <h2>Название детали</h2>
+      <img src="assets/placeholder.png" alt="Деталь" />
+      <p>Описание детали и её функция.</p>
+      <button>Показать в разрезе</button>
+      <button>Сравнить</button>
+    </aside>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
